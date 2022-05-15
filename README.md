@@ -9,12 +9,16 @@ Custom Emacs configuration. I'm currently using Emacs 28.x with the native compi
 Install Emacs with nix (see [nixconfig](https://github.com/booklearner/nixconfig):
 
 ```nix
-environment = {
-  systemPackages = with pkgs; [
-    emacs
-    # ...
-  ];
-};
+{
+  # ...
+  environment = {
+    systemPackages = with pkgs; [
+      emacs
+      # ...
+    ];
+  };
+  # ...
+}
 ```
 
 No further setup is required (e.g. don't need to install `libgccjit` manually)
