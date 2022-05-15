@@ -2,22 +2,23 @@
 
 <img src="https://user-images.githubusercontent.com/21013541/103108010-af0a2c80-4611-11eb-88df-249cbfbbdc0b.png" width=250>
 
-Custom Emacs configuration. I'm currently using Emacs 28.x with the native compilation branch on macOS Big Sur.
+Custom Emacs configuration. I'm currently using Emacs 28.x with the native compilation branch on macOS Monterey.
 
 ## Getting Started
 
-Install Emacs:
+Install Emacs with nix (see [nixconfig](https://github.com/booklearner/nixconfig):
 
-```shell
-$ brew tap d12frosted/emacs-plus
-$ brew install emacs-plus@28 --with-native-comp --with-xwidgets
+```nix
+environment = {
+  systemPackages = with pkgs; [
+    emacs
+    # ...
+  ];
+};
 ```
 
-NOTE: at the time of writing, `gcc` and `libgccjit` need to be re-installed to get native compilation to work.
+No further setup is required (e.g. don't need to install `libgccjit` manually)
 
-```shell
-$ brew reinstall gcc libgccjit
-```
 
 Check out this repository to either `~/.emacs.d` and start emacs as usual or somewhere else and start emacs from within this directly, pointing to `init.el`.
 
