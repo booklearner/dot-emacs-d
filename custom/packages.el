@@ -41,12 +41,14 @@
     dockerfile-mode
     doom-modeline
     doom-themes
+    elixir-mode
     emojify
     eshell-toggle
     exec-path-from-shell
     flx
     flycheck
     flycheck-clang-analyzer
+    flycheck-elixir
     flycheck-guile
     flycheck-inline
     flycheck-ocaml
@@ -60,6 +62,7 @@
     merlin
     merlin-company
     nhexl-mode
+    nix-mode
     nlinum
     nlinum-relative
     package-lint
