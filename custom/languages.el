@@ -15,7 +15,7 @@
 
 ;; config for ocaml with merlin
 (require 'merlin-company)
-(require 'opam-user-setup "~/src/dot-emacs-d/custom/opam-user-setup.el")
+;; (require 'opam-user-setup "~/src/dot-emacs-d/custom/opam-user-setup.el")
 
 ;; setup for C, run clang-format automatically on save
 (add-hook 'c-mode-common-hook #'clang-format+-mode)

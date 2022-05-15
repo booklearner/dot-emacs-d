@@ -13,7 +13,7 @@ Install Emacs with nix (see [nixconfig](https://github.com/booklearner/nixconfig
   # ...
   environment = {
     systemPackages = with pkgs; [
-      emacs
+      emacsNativeComp
       # ...
     ];
   };
