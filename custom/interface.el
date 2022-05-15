@@ -20,7 +20,7 @@
 (require 'flycheck)
 
 ;; set font to use with Emacs
-(set-frame-font "JetBrains Mono 13" nil t)
+(set-frame-font "JetBrains Mono 14" nil t)
 
 ;; disable some UI components that are unnecessary
 (setq inhibit-startup-screen t)    ; don't show the startup screen
@@ -54,8 +54,8 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-one-light t)
-;; (load-theme 'doom-dracula t)
+;; (load-theme 'doom-one-light t)
+(load-theme 'doom-dracula t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")
