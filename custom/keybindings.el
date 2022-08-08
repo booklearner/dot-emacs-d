@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2022 booklearner
 
-;; Author: booklearner <booklearner@protonmail.com>
+;; Author: booklearner <booklearner@proton.me>
 ;; SPDX-License-Identifier: BSD-3-Clause
 
 ;;; Commentary:
@@ -49,8 +49,8 @@
 ;; found.
 ;; TODO: figure out how to do the above
 (add-hook 'eshell-hist-mode-hook
-	  (lambda ()
-	    (substitute-key-definition 'eshell-list-history 'counsel-esh-history eshell-hist-mode-map)))
+      (lambda ()
+        (substitute-key-definition 'eshell-list-history 'counsel-esh-history eshell-hist-mode-map)))
 
 (provide 'keybindings)
 ;;; keybindings.el ends here

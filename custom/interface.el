@@ -2,7 +2,7 @@
 
 ;; Copyright (C) 2022 booklearner
 
-;; Author: booklearner <booklearner@protonmail.com>
+;; Author: booklearner <booklearner@proton.me>
 ;; SPDX-License-Identifier: BSD-3-Clause
 
 ;;; Commentary:
