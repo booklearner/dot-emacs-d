@@ -37,6 +37,9 @@
 (add-to-list 'load-path "~/src/dot-emacs-d")
 (add-to-list 'load-path "~/src/dot-emacs-d/custom")
 
+;; suppress warning logs
+(setq warning-suppress-log-types '((comp)))
+
 ;; load all the custom packages, ui tweaks, language configurations etc.
 (require 'packages)
 (require 'keybindings)

@@ -35,6 +35,7 @@
     clang-format+
     clojure-mode
     company
+    company-solidity
     counsel
     counsel-projectile
     diff-hl
@@ -54,6 +55,7 @@
     flycheck-ocaml
     geiser
     github-theme
+    go-mode
     ivy
     ivy-rich
     lsp-mode
@@ -69,8 +71,11 @@
     projectile
     python-mode
     rust-mode
+    solidity-mode
+    solidity-flycheck
     swiper
     toml-mode
+    typescript-mode
     tuareg
     use-package
     which-key

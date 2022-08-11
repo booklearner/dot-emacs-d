@@ -54,8 +54,8 @@
       scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-(load-theme 'doom-one-light t)
-;; (load-theme 'doom-dracula t)
+;; (load-theme 'doom-one-light t)
+(load-theme 'doom-dracula t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")
@@ -76,7 +76,6 @@
 (setq company-minimum-prefix-length 2)
 (setq company-tooltip-minimum-width 50)
 (delete 'company-dabbrev company-backends)  ; disable dabbrev completions from company
-
 
 ;; configure flycheck
 (global-flycheck-inline-mode)
@@ -104,6 +103,9 @@
 
 ;; when no more pages to scroll, switch to end or start of buffer
 (setq scroll-error-top-bottom t)
+
+;; global line number mode, shows line numbers
+(setq global-linum-mode t)
 
 (provide 'interface)
 ;;; interface.el ends here
