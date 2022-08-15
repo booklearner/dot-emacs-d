@@ -48,9 +48,10 @@
 ;; with define-key instead of using a hook, but eshell-hist-mode-hook is not
 ;; found.
 ;; TODO: figure out how to do the above
-(add-hook 'eshell-hist-mode-hook
-      (lambda ()
-        (substitute-key-definition 'eshell-list-history 'counsel-esh-history eshell-hist-mode-map)))
+(add-hook 'eshell-hist-mode-hook (lambda ()
+                                   (substitute-key-definition 'eshell-list-history
+                                                              'counsel-esh-history
+                                                              eshell-hist-mode-map)))
 
 (provide 'keybindings)
 ;;; keybindings.el ends here

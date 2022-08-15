@@ -23,63 +23,18 @@
 (package-initialize)
 
 ;; update the packages list if it's empty
-(unless package-archive-contents
-  (package-refresh-contents))
+(unless package-archive-contents (package-refresh-contents))
 
 ;; this is the list of packages we're installing
 (defvar list-of-packages
-  '(ag
-    all-the-icons
-    all-the-icons-ivy-rich
-    cider
-    clang-format+
-    clojure-mode
-    company
-    company-solidity
-    counsel
-    counsel-projectile
-    diff-hl
-    dockerfile-mode
-    doom-modeline
-    doom-themes
-    elixir-mode
-    emojify
-    eshell-toggle
-    exec-path-from-shell
-    flx
-    flycheck
-    flycheck-clang-analyzer
-    flycheck-elixir
-    flycheck-guile
-    flycheck-inline
-    flycheck-ocaml
-    geiser
-    github-theme
-    go-mode
-    ivy
-    ivy-rich
-    lsp-mode
-    magit
-    markdown-mode
-    merlin
-    merlin-company
-    nhexl-mode
-    nix-mode
-    nlinum
-    nlinum-relative
-    package-lint
-    projectile
-    python-mode
-    rust-mode
-    solidity-mode
-    solidity-flycheck
-    swiper
-    toml-mode
-    typescript-mode
-    tuareg
-    use-package
-    which-key
-    yaml-mode))
+  '(ag all-the-icons all-the-icons-ivy-rich cider clang-format+ clojure-mode company
+       company-solidity counsel counsel-projectile diff-hl dockerfile-mode doom-modeline doom-themes
+       elixir-mode emojify eshell-toggle exec-path-from-shell flx flycheck flycheck-clang-analyzer
+       flycheck-elixir flycheck-guile flycheck-inline flycheck-ocaml geiser github-theme go-mode ivy
+       ivy-rich lsp-mode magit markdown-mode merlin merlin-company nhexl-mode nix-mode nlinum
+       nlinum-relative ocamlformat package-lint projectile python-mode rust-mode solidity-flycheck
+       solidity-mode swiper toml-mode tuareg typescript-mode use-package which-key yaml-mode
+       elisp-format))  ; append new packages to end of list
 
 (defun ensure-all-packages-are-installed (list)
   "Ensures all packages in LIST are installed."
