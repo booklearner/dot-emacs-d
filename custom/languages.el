@@ -15,6 +15,10 @@
 
 ;; config for ocaml with merlin
 (require 'merlin-company)
+(with-eval-after-load 'company
+  (add-to-list 'company-backends 'merlin-company-backend))
+; Enable company on merlin managed buffers
+(add-hook 'merlin-mode-hook 'company-mode)
 (load "/Users/booklearner/.opam/default/share/emacs/site-lisp/tuareg-site-file")
 (require 'opam-user-setup "~/src/dot-emacs-d/custom/opam-user-setup.el")
 
