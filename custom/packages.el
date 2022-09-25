@@ -34,7 +34,7 @@
        ivy-rich lsp-mode magit markdown-mode merlin merlin-company nhexl-mode nix-mode nlinum
        nlinum-relative ocamlformat package-lint projectile python-mode rust-mode solidity-flycheck
        solidity-mode swiper toml-mode tuareg typescript-mode use-package which-key yaml-mode
-       elisp-format))  ; append new packages to end of list
+       elisp-format ligature))  ; append new packages to end of list
 
 (defun ensure-all-packages-are-installed (list)
   "Ensures all packages in LIST are installed."
