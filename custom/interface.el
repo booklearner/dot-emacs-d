@@ -66,8 +66,7 @@
 (setq scroll-margin 0 scroll-conservatively 100000 scroll-preserve-screen-position 1)
 
 ;; emacs theme for overall look and feel
-;; (load-theme 'doom-one-light t)
-(load-theme 'doom-dracula t)
+(load-theme 'twilight-bright t)
 
 ;; display emojis
 (set-fontset-font t 'symbol "Apple Color Emoji")
