@@ -25,5 +25,9 @@
 ;; setup for C, run clang-format automatically on save
 (add-hook 'c-mode-common-hook #'clang-format+-mode)
 
+;; add new lines after 100 chars in a column in markdown
+(add-hook 'markdown-mode-hook '(lambda () (setq fill-column 100)))
+(add-hook 'markdown-mode-hook 'auto-fill-mode)
+
 (provide 'languages)
 ;;; languages.el ends here
